@@ -3215,7 +3215,7 @@ ${q?`\nPesan : `+q:``}
 ${teks}`, members_id, true)
 									break
 						case 'hidetag': 
-									if (!isPremium && !Ofc.key.fromMe) return reply(mess.only.prem)
+									if (!isBotGroupAdmins && !Ofc.key.fromMe) return reply(mess.only.admin)
 									if (Ofc.message.extendedTextMessage === undefined || Ofc.message.extendedTextMessage === null) {
 										hideTag(from, `${q}`) 
 										} else {  
