@@ -2020,18 +2020,7 @@ _Tunggu Proses Upload Media_`
                        reply('Terjadi kesalahan')
                 })
 		break
-						case 'asupan':{
-									if (isLimit(sender, isPremium, isOwner, limitawal, limit)) return reply(mess.limit)
-									reply(mess.wait)
-									data = fs.readFileSync('./lib/asupan.js');
-									jsonData = JSON.parse(data);
-									randIndex = Math.floor(Math.random() * jsonData.length);
-									randKey = jsonData[randIndex];
-									let kdkp = await getBuffer(randKey.result)
-									Zeeone.sendMessage(from, kdkp, video, { quoted:  Ofc, mimetype: 'video/mp4', caption: 'Asupan Lord'})
-									limitAdd(sender, limit)
-									}
-									break
+					
 						case 'delete': case 'del': case 'd':
 									if (!Ofc.key.fromMe && !isGroupAdmins && !isOwner)return reply(mess.only.admin)
 									if (!isQuotedReply) return reply(`Reply pesan dari bot!!`)
@@ -2097,7 +2086,7 @@ Alasan : ${reason}`, [sender], true)
 										sendButLocation(from, sewabotkak(), `ᴹᴿ°᭄Mhyckaོ?`,  thumbnail, gakloo,{})
 										break
 						case 'donasi':
-									reply('*Wa.me/6285340409831*')
+									reply('*Wa.me/6282237543766*')
 									break
 						case 'join':case 'joingc':
 									if (!q) return reply('Linknya?')
@@ -3297,7 +3286,7 @@ let qqppp = [{
                     },
                     "type": "RESPONSE"
                 }]
-                sendButLocation(from, teks, `LordUserbot™© | Allright Reserved.`, thumbnail, qqppp, {contextInfo: { mentionedJid: [nupe]}})
+                sendButLocation(from, teks, `jeje™© | Allright Reserved.`, thumbnail, qqppp, {contextInfo: { mentionedJid: [nupe]}})
 				
 } catch (e){
 reply(`${e}`)
