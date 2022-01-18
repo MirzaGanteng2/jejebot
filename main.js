@@ -67,7 +67,7 @@ alpha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 
 alpha.logger.level = 'warn'
     alpha.version = [2, 2143,3] 
-    alpha.browserDescription = ["MhyckaHY", "Safari", "3.0"];
+    alpha.browserDescription = ["MHYCKA", "Safari", "3.0"];
 console.log(color(figlet.textSync('MhyckaHY', {
 		font: 'Standard',
 		horizontalLayout: 'default',
@@ -97,11 +97,11 @@ const sendButMessage = (id, text1, desc1, but = [], options = {}) => {
       };
       alpha.sendMessage(id, buttonMessage, MessageType.buttonsMessage, options);
     };
-let kl =  'Hello, Im Mhycka✌️'
+let kl =  'Hi Lord, Im Mhycka'
 try {
 sendButMessage(`${setting.ownerNumber}@s.whatsapp.net`, kl, 'NASA-BOT^4.5.0 | Created By MhyckaHY' , [{"buttonId": `tes`,"buttonText": {"displayText": "Okey 😉"},"type": "RESPONSE"}], {})
 } catch {
-sendButMessage(`${setting.ownerNumber}@s.whatsapp.net`, 'Bot berhasil tersambung dengan WhatsApp anda.', 'Alphabot^11.8.3 | Created By Mhycka' , [{"buttonId": `tes`,"buttonText": {"displayText": "Okey 😉"},"type": "RESPONSE"}], {})
+sendButMessage(`${setting.ownerNumber}@s.whatsapp.net`, 'Bot berhasil tersambung dengan WhatsApp anda.', 'Alphabot^11.8.3 | Created By ZeeoneOfc' , [{"buttonId": `tes`,"buttonText": {"displayText": "Okey 😉"},"type": "RESPONSE"}], {})
 }    
 await alpha.connect({timeoutMs: 30 * 3000})
  fs.writeFileSync('./session.json', JSON.stringify(alpha.base64EncodedAuthInfo(), null, '\t'))
